@@ -1,5 +1,5 @@
 #Using pypi manylinux image
-FROM cvalenzu/generic_builder:latest
+FROM csrg/generic_builder:latest
 
 #Creating jenkins user with 10000 permissions
 ENV HOME /home/jenkins
