@@ -1,8 +1,8 @@
 #Using pypi manylinux image
-FROM quay.io/pypa/manylinux1_x86_64
+FROM quay.io/pypa/manylinux1_x86_64:latest
 
 #Installing dependencies
-RUN yum groupinstall -y "Development Tools" && \
+RUN yum update -y && yum groupinstall -y "Development Tools" && \
     yum install -y csh libXext-devel libXau-devel libX11-devel libXt-devel libxml2-devel ncurses-devel texlive-multirow python-devel Cython
 
 #Download and install Anaconda
