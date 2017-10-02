@@ -11,4 +11,5 @@ cd ../INSTALL
 #Compiling ACS
 cd /ACS
 export MAKE_NOSTATIC=yes; export MAKE_NOIFR_CHECK=on
-make
+# Paste the output logs from jenkins
+make 2>&1 |tee build.summary
