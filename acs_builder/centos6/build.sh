@@ -1,6 +1,8 @@
 cd /ACS
-source LGPL/acsBUILD/config/.acs/.bash_profile.acs
 
+export ACS_RETAIN=1
+export JAVA_HOME=/usr
+source LGPL/acsBUILD/config/.acs/.bash_profile.acs
 #Compiling ExtProds
 cd ExtProd/PRODUCTS
 ./download-products.sh
