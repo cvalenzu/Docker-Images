@@ -19,4 +19,4 @@ RUN yum install -y java-1.7.0-openjdk java-1.7.0-openjdk-devel
 RUN pip install virtualenv
 
 #Copying build script
-COPY build.sh
+COPY build.sh /build.sh
