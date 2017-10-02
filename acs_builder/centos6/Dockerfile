@@ -13,7 +13,7 @@ RUN yum install -y make bzip2 unzip patch libX11-devel \
     libxslt-devel libxml2-devel sqlite-devel freetype-devel libpng-devel bzip2-devel
 
 #Installing Java JDK
-RUN yum install -y java-1.7.0-openjdk java-1.7.0-openjdk-devel
+RUN yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel  java-1.7.0-openjdk java-1.7.0-openjdk-devel
 
 #Installing virtualenv
 RUN pip install virtualenv
