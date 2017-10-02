@@ -5,6 +5,8 @@ MAINTAINER CSRG <camilo.valenzuela@alumnos.usm.cl>
 #Installing dependencies
 RUN yum install -y epel-release
 
+RUN yum groupinstall -y "Development Tools"
+
 RUN yum install -y make bzip2 unzip patch libX11-devel \ 
     git wget gcc gcc-c++ emacs antlr expat-devel cppunit cppunit-devel \
     swig log4cpp castor xerces-c xerces-c-devel xerces-j2 ksh subversion \
