@@ -22,3 +22,5 @@ RUN pip install virtualenv
 
 #Copying build script
 COPY build.sh /build.sh
+COPY build_acs.sh /build_acs.sh
+COPY build_extprods.sh /build_extprods.sh
