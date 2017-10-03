@@ -24,7 +24,5 @@ find -name "*.o" | xargs rm -rf
 #Compiling ACS
 cd /ACS
 export MAKE_NOSTATIC=yes; export MAKE_NOIFR_CHECK=on
-# Set the number of jobs and the charge
-export MAKE_PARS=" -j 2 -l 2 "
 # Paste the output logs from jenkins
 make 2>&1 |tee build.summary
