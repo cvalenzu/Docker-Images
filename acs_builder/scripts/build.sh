@@ -16,8 +16,12 @@ cd ExtProd/PRODUCTS
 find . -name "config.cache" | xargs rm -rf
 
 ./download-products.sh
-cd ../INSTALL
-./buildTools
+sed -i '210s/.*/\techo "Skipping Ant"/' buildTools
+
+./buildTools  2>&1 |tee build.summary
+
+git chechout buildTools
+
 cd $ALMASW_INSTDIR
 find -name "*.o" | xargs rm -rf
 

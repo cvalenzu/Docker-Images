@@ -21,6 +21,6 @@ RUN yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel  java-1.7.0-openj
 RUN pip install virtualenv
 
 #Copying build script
-COPY ../scripts/build.sh /build.sh
-COPY ../scripts/build_acs.sh /build_acs.sh
-COPY ../scripts/build_extprods.sh /build_extprods.sh
+COPY scripts/build.sh /build.sh
+COPY scripts/build_acs.sh /build_acs.sh
+COPY scripts/build_extprods.sh /build_extprods.sh
