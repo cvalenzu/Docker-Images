@@ -14,13 +14,13 @@ RUN yum install -y make bzip2 unzip patch libX11-devel \
     gsl-devel openldap-devel procmail python-pip python-devel openssl-devel \
     libxslt-devel libxml2-devel sqlite-devel freetype-devel libpng-devel bzip2-devel
 
-#Installing Java JDK
-RUN yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel  java-1.7.0-openjdk java-1.7.0-openjdk-devel
+#Installing Java JDK and ANT
+RUN yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel  java-1.7.0-openjdk java-1.7.0-openjdk-devel ant
 
 #Installing virtualenv
 RUN pip install virtualenv
 
 #Copying build script
-COPY build.sh /build.sh
-COPY build_acs.sh /build_acs.sh
-COPY build_extprods.sh /build_extprods.sh
+COPY ../scripts/build.sh /build.sh
+COPY ../scripts/build_acs.sh /build_acs.sh
+COPY ../scripts/build_extprods.sh /build_extprods.sh
