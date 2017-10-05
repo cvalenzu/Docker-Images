@@ -14,6 +14,6 @@ find . -name "config.cache" | xargs rm -rf
 
 ./download-products.sh
 cd ../INSTALL
-./buildTools
+./buildTools  2>&1 |tee build.summary
 cd $ALMASW_INSTDIR
 find -name "*.o" | xargs rm -rf
