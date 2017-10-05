@@ -25,6 +25,6 @@ sed -i '210s/.*/\techo "Skipping Ant"/' buildTools
 
 ./buildTools  2>&1 |tee build.summary
 
-git chechout buildTools
+git checkout buildTools
 cd $ALMASW_INSTDIR
 find -name "*.o" | xargs rm -rf
